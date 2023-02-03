@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <title>Diamond race</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1>Diamond race</h1>
+    </header>
+    <div class="container">
+        <div class="race-area"></div>
+        <div class = "diamond">
+            <div id="blue" class="diamond" onclick="moveRight(diamonds[0], diamonds)">
+                <div id="blue-dimension1"></div>
+                <div id="blue-dimension2"></div>
+            </div>
+            <div id="red" class="diamond" onclick="moveRight(diamonds[1])">
+                <div id="red-dimension1"></div>
+                <div id="red-dimension2"></div>
+            </div>
+            <div id="purple" class="diamond" onclick="moveRight(diamonds[2])">
+                <div id="purple-dimension1"></div>
+                <div id="purple-dimension2"></div>            
+            </div>
+            <div id="green" class="diamond" onclick="moveRight(diamonds[3])">
+                <div id="green-dimension1"></div>
+                <div id="green-dimension2"></div>
+            
+            </div>
+        </div> 
+        <div class="start-line">Start</div>
+        <div class="finish-line">Finish</div>
+        <div class="score-board">Score board 
+            <button id="reset" onclick="reset(diamonds)">Reset</button>
+            <div id="score-blue" class="score"> <p>0</p> </div>
+            <div id="score-red" class="score"> <p>0</p></div>
+            <div id="score-purple" class="score"> <p>0</p></div>
+            <div id="score-green" class="score"> <p>0</p></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>    
+</html>

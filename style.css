@@ -1,0 +1,229 @@
+
+*{
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    margin-left:20px;
+}
+
+.start-line{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row:1;
+    position: absolute;
+    top:9%;
+    font-size: 20px;
+}
+
+.finish-line{
+    margin-left:20px;
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row:1;
+    position: fixed;
+    top:9%;
+    left: 45%;
+    font-size: 20px;
+}
+
+/*scoreboard layout*/
+.score-board{
+    font-size:20px;
+    text-align: left;
+    color:black;
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:3;
+    position: absolute;
+    max-width: 200px;
+    min-width: 150px;
+    width: 30%;
+    height: 30%;
+    top:20%;
+    left: 60%;
+}
+
+p{
+    position: absolute;
+    text-align: right;
+    overflow: visible;
+    left:110%;
+}
+    
+.race-area{
+    margin-left: 44px;
+    position: absolute;
+    height: 450px;
+    width: 45%;
+    top:13%;
+    left: 0%;
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row:2;
+    border-left:3px solid black;
+    border-right: 3px solid black;
+}
+
+/* Diamonds */
+.diamond {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#blue {
+    position: absolute;
+    left:0%;
+    top: 140px;
+    transform: rotate(-45deg);
+    background-color: #38456a;
+}
+
+#blue-dimension1{
+    position: absolute;
+ 	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 25px solid #4e5a7a;
+	border-bottom: 25px solid transparent;
+}
+
+#blue-dimension2{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 25px solid #23315a;
+	border-bottom:25px solid transparent;
+}
+
+#red{
+    left:0%;
+    position: absolute;
+    top: 240px;
+    transform: rotate(-45deg);
+    background-color: #8c3233;
+}
+
+#red-dimension1{
+    position: relative;
+ 	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 25px solid #99494a;
+	border-bottom: 25px solid transparent;
+}
+
+#red-dimension2{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 25px solid #801c1d;
+	border-bottom:25px solid transparent;
+}
+
+#purple{
+    left:0%;
+    position: absolute;
+    top: 340px;
+    transform: rotate(-45deg);
+    background-color: #7b3c6d;
+}
+
+#purple-dimension1{
+    position: relative;
+ 	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 25px solid #8a527d;
+	border-bottom: 25px solid transparent;
+}
+
+#purple-dimension2{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 25px solid #6d275d;
+	border-bottom:25px solid transparent;
+}
+
+#green{
+    left:0%;
+    position: absolute;
+    top: 440px;
+    transform: rotate(-45deg);
+    background-color: #1d6a4c;
+}
+
+#green-dimension1{
+    position: relative;
+ 	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 25px solid #367a60;
+	border-bottom: 25px solid transparent;
+}
+
+#green-dimension2{
+    position: absolute;
+    top:0%;
+    left: 50%;
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 25px solid #055a39;
+	border-bottom:25px solid transparent;
+}
+
+/*scorecounter for each diamond*/
+.score{
+    width:100px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    left: 5%;
+}
+
+#score-blue{
+    background-color: #38456a;
+    top: 20%;
+}
+
+#score-red{
+    background-color: #8c3233;
+    top: 25%;
+}
+
+#score-purple{
+    background-color: #7b3c6d;
+    top: 30%;    
+}
+
+#score-green{
+    background-color: #1d6a4c;
+    top: 35%;
+}
+
+/*reset button*/
+#reset{
+    color:black;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 70px;
+    border-radius: 10px;
+    border-color:black;
+}
